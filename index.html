@@ -40,7 +40,7 @@
 
 
 <body>
-    <header class="lg:max-w-7xl lg:mx-auto">
+    <header class="max-w-7xl mx-auto">
 
         <!-- new navbar -->
 
@@ -71,7 +71,7 @@
             </a>
 
             <div class="navbar-end">
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -81,13 +81,15 @@
                     </label>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                        <li> <input type="email" placeholder="search here" class="input rounded-3xl bg-white" />
-                            <i class="fa-solid fa-magnifying-glass absolute ml-auto"></i>
-                        </li>
+                        <div>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li> <input type="email" placeholder="search here" class="input rounded-3xl bg-white" />
+                                <i class="fa-solid fa-magnifying-glass absolute ml-auto"></i>
+                            </li>
+                        </div>
                     </ul>
                 </div>
 
@@ -732,7 +734,7 @@
 
     </main>
 
-    <footer class="footer footer-center p-2 bg-black text-base-content text-white rounded lg:py-36">
+    <footer class="footer lg:footer-center p-2 bg-black text-base-content text-white rounded lg:py-36">
         <div class="flex gap-4">
             <img src="images/logo.png" alt="" srcset="">
             <h2 class="text-4xl ">Fruit Burst</h2>
