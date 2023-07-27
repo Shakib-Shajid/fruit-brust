@@ -38,15 +38,60 @@
 
 </head>
 
+
 <body>
     <header class="max-w-7xl mx-auto">
-        <nav class="bg-black">
-            <!-- <div>
-                <h2 class="text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
-                <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
-                <button class="btn bg-bg-primary rounded-lg text-white px-7 py-5">Shop Now</button>
-            </div> -->
-        </nav>
+
+        <!-- new navbar -->
+
+        <div class="navbar bg-base-100 lg:bg-bg-primary rounded-full lg:px-12 py-5 lg:mb-14">
+            <!-- visible part -->
+            <div class="navbar-start">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost sm:hidden flex items-center ml-auto">
+                    <div class="flex items-center gap-2">
+                        <img src="images/logo.png" class="h-[30px] w-[22px]" alt="">
+                        <p class="text-xl ">Fruit Burst</p>
+                    </div>
+                </a>
+            </div>
+            <a class="navbar-center max-w-xs hidden sm:block">
+                <div class="flex items-center gap-2">
+                    <img src="images/logo.png" class="h-[54px] w-[60px]" alt="">
+                    <p class="text-4xl font-bold text-white">Fruit Burst</p>
+                </div>
+            </a>
+
+            <div class="navbar-end">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <input type="email" placeholder="search here"
+                    class="input input-ghost max-w-xs hidden sm:block rounded-3xl bg-white p-4" />
+            </div>
+        </div>
+
+        <!-- new navbar -->
 
         <!-- banner -->
 
@@ -128,7 +173,7 @@
         </section>
 
         <!-- white fruit part -->
-        <section class="md:relative drop-shadow-sm">
+        <section class="md:relative drop-shadow-sm hidden sm:block">
             <div class="flex justify-between mx-16 my-12 bg-white md:absolute -top-40 left-7 ">
                 <div class="m-10">
                     <img src="images/fruit1.png" alt="">
@@ -157,45 +202,36 @@
 
     </header>
 
-    <main class="max-w-7xl mx-auto mt-52">
-        <section class="lg:flex justify-between">
-            <div class="space-y-6 mb-12">
-                <h3 class="text-5xl font-semibold">Deal of the day </h3>
-                <p class="text-base font-medium w-2/3 opacity-60">Contrary to popular belief, is not simply
-                    random text. It
-                    has
-                    roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    <main class="max-w-7xl mx-auto mt-6 lg:mt-52">
+        <div class="flex justify-center mb-10">
+            <div class="mr-60">
+                <h1 class="font-bold mb-6 text-5xl">Deal of the day</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max mb-3">
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
-                        </span>
-                        days
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:10;"></span>
-                        </span>
-                        hours
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:24;"></span>
-                        </span>
-                        min
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:41;"></span>
-                        </span>
-                        sec
-                    </div>
+            <div class="flex justify-center items-center text-center space-x-5">
+                <div>
+                    <h1 class="font-bold text-5xl">29</h1>
+                    <p class="font-medium text-base ">Days</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div>
+                    <h1 class="font-bold text-5xl">15</h1>
+                    <p class="font-medium text-base">Hours</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div>
+                    <h1 class="font-bold text-5xl">25</h1>
+                    <p class="font-medium text-base">Minutes</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div>
+                    <h1 class="font-bold text-5xl">08</h1>
+                    <p>Seconds</p>
                 </div>
             </div>
-        </section>
-
+        </div>
         <!-- Deal of the day -->
         <section>
             <div class="lg:flex justify-between">
@@ -230,8 +266,11 @@
                                         <img src="images/fruit6.png" alt="Apples" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
-                                        <h2 class="card-title">12.90$ - 18.85$</h2>
-                                        <p class="opacity-60">Apples</p>
+                                        <h3 class="text-4xl font-extrabold opacity-60">Apples</h3>
+                                        <p class="font-medium mt-6">Professional employees are there for you to pick the
+                                            most
+                                            amazing and fresh
+                                            fruits.</p>
                                         <div class="rating rating-lg rating-half w-48 h-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
                                             <input type="radio" name="rating-10"
@@ -300,8 +339,11 @@
                                         <img src="images/fruit7.png" alt="Orange" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
-                                        <h2 class="card-title">12.90$ - 18.85$</h2>
-                                        <p class="opacity-60">Orange</p>
+                                        <h3 class="text-4xl font-extrabold opacity-60">Orange</h3>
+                                        <p class="font-medium mt-6">Professional employees are there for you to pick the
+                                            most
+                                            amazing and fresh
+                                            fruits.</p>
                                         <div class="rating rating-lg rating-half w-48 h-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
                                             <input type="radio" name="rating-10"
@@ -370,8 +412,11 @@
                                         <img src="images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
-                                        <h2 class="card-title">12.90$ - 18.85$</h2>
-                                        <p class="opacity-60">Red Dragon</p>
+                                        <h3 class="text-4xl font-extrabold opacity-60">Red Dragon</h3>
+                                        <p class="font-medium mt-6">Professional employees are there for you to pick the
+                                            most
+                                            amazing and fresh
+                                            fruits.</p>
                                         <div class="rating rating-lg rating-half w-48 h-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
                                             <input type="radio" name="rating-10"
@@ -439,8 +484,11 @@
                                         <img src="images/fruit9.png" alt="Banana" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
-                                        <h2 class="card-title">12.90$ - 18.85$</h2>
-                                        <p class="opacity-60">Banana</p>
+                                        <h3 class="text-4xl font-extrabold opacity-60">Banana</h3>
+                                        <p class="font-medium mt-6">Professional employees are there for you to pick the
+                                            most
+                                            amazing and fresh
+                                            fruits.</p>
                                         <div class="rating rating-lg rating-half w-48 h-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
                                             <input type="radio" name="rating-10"
