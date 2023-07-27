@@ -40,11 +40,11 @@
 
 
 <body>
-    <header class="max-w-7xl mx-auto">
+    <header class="lg:max-w-7xl lg:mx-auto">
 
         <!-- new navbar -->
 
-        <div class="navbar bg-base-100 lg:bg-bg-primary rounded-full lg:px-12 py-5 lg:mb-14">
+        <div class="navbar bg-base-100 lg:bg-bg-primary rounded-full lg:px-12 py-5 lg:my-12">
             <!-- visible part -->
             <div class="navbar-start">
                 <div class="navbar-center hidden lg:flex">
@@ -53,6 +53,7 @@
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
+
                     </ul>
                 </div>
                 <a class="btn btn-ghost sm:hidden flex items-center ml-auto">
@@ -88,6 +89,7 @@
                 </div>
                 <input type="email" placeholder="search here"
                     class="input input-ghost max-w-xs hidden sm:block rounded-3xl bg-white p-4" />
+                <i class="fa-solid fa-magnifying-glass -ml-8"></i>
             </div>
         </div>
 
@@ -97,7 +99,7 @@
 
         <!-- carousal -->
         <section>
-            <div class="carousel w-full h-48 lg:h-[600px]">
+            <div class="carousel w-full h-[196px] lg:h-[600px]">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -116,8 +118,8 @@
                     </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0 ">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0 ">❯</a>
                     </div>
                 </div>
 
@@ -126,8 +128,10 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="space-y-7">
-                                <h2 class="text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
-                                <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                                <h2 class="text-2xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br>
+                                    doorstep</h2>
+                                <p class="text-[14px] lg:text-xl font-medium text-white">We supply highly quality
+                                    organic products</p>
                                 <button class="btn bg-bg-primary border-0 rounded-lg text-white">Shop Now</button>
                             </div>
                         </div>
@@ -142,8 +146,10 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="space-y-7">
-                                <h2 class="text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
-                                <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                                <h2 class="text-2xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br>
+                                    doorstep</h2>
+                                <p class="text-[14px] lg:text-xl font-medium text-white">We supply highly quality
+                                    organic products</p>
                                 <button class="btn bg-bg-primary border-0 rounded-lg text-white">Shop Now</button>
                             </div>
                         </div>
@@ -158,8 +164,10 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="space-y-7">
-                                <h2 class="text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
-                                <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                                <h2 class="text-2xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br>
+                                    doorstep</h2>
+                                <p class="text-[14px] lg:text-xl font-medium text-white">We supply highly quality
+                                    organic products</p>
                                 <button class="btn bg-bg-primary border-0 rounded-lg text-white">Shop Now</button>
                             </div>
                         </div>
@@ -174,7 +182,7 @@
 
         <!-- white fruit part -->
         <section class="md:relative drop-shadow-sm hidden sm:block">
-            <div class="flex justify-between mx-16 my-12 bg-white md:absolute -top-40 left-7 ">
+            <div class="flex justify-between mx-16 my-12 bg-white md:absolute -top-40 left-7 drop-shadow-md rounded-lg">
                 <div class="m-10">
                     <img src="images/fruit1.png" alt="">
                     <p class="mt-4 text-center">Strawberry</p>
@@ -202,15 +210,15 @@
 
     </header>
 
-    <main class="max-w-7xl mx-auto mt-6 lg:mt-52">
-        <div class="flex justify-center mb-10">
-            <div class="mr-60">
-                <h1 class="font-bold mb-6 text-5xl">Deal of the day</h1>
+    <main class="max-w-7xl mx-auto lg:mt-52">
+        <div class="lg:flex lg:justify-center mb-10">
+            <div class="lg:mr-60 m-2">
+                <h1 class="font-bold mb-6 lg:text-5xl text-xl">Deal of the day</h1>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                     Latin
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="flex justify-center items-center text-center space-x-5">
+            <div class="flex justify-center lg:items-center text-center lg:space-x-5 my-5">
                 <div>
                     <h1 class="font-bold text-5xl">29</h1>
                     <p class="font-medium text-base ">Days</p>
@@ -242,6 +250,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class="w-5/6 h-[1px] text-gray-500 bg-gray-400">
                         <p class="opacity-60">Apples</p>
                         <div class="rating rating-lg rating-half w-48 h-6">
                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -315,6 +324,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class="w-5/6 h-[1px] text-gray-500 bg-gray-400">
                         <p class="opacity-60">Orange</p>
                         <div class="rating rating-lg rating-half w-48 h-6">
                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -388,6 +398,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class="w-5/6 h-[1px] text-gray-500 bg-gray-400">
                         <p class="opacity-60">Red dragon</p>
                         <div class="rating rating-lg rating-half w-48 h-6">
                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -460,6 +471,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class="w-5/6 h-[1px] text-gray-500 bg-gray-400">
                         <p class="opacity-60">Banana</p>
                         <div class="rating rating-lg rating-half w-48 h-6">
                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -534,8 +546,8 @@
 
 
         <!-- meet our team -->
-        <section class="my-36">
-            <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+        <section class="lg:my-36">
+            <div class="hero lg:min-h-screen" style="background-image: url(images/team.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="space-y-4">
@@ -547,8 +559,8 @@
                                 piece
                                 of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                         </div>
-                        <div class="flex justify-between">
-                            <div>
+                        <div class="flex lg:flex-row flex-col justify-between ">
+                            <div class="mb-6">
                                 <img class="inline-block justify-center" src="images/member1.png" alt="">
                                 <h4 class="text-2xl font-bold mt-5">Awlad Hossain</h4>
                                 <p class="font-medium">Fruits Expert</p>
@@ -559,7 +571,7 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="mb-6">
                                 <img class="inline-block justify-center" src="images/member2.png" alt="">
                                 <h4 class="text-2xl font-bold mt-5">Safia Chowdhury</h4>
                                 <p class="font-medium">Fruits Expert</p>
@@ -570,7 +582,7 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="mb-6">
                                 <img class="inline-block justify-center" src="images/member3.png" alt="">
                                 <h4 class="text-2xl font-bold mt-5">Rokib Hossain</h4>
                                 <p class="font-medium">Fruits Expert</p>
@@ -581,7 +593,7 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="mb-6">
                                 <img class="inline-block justify-center" src="images/member4.png" alt="">
                                 <h4 class="text-2xl font-bold mt-5">Chaity</h4>
                                 <p class="font-medium">Fruits Expert</p>
@@ -600,7 +612,7 @@
         <!-- why choose us -->
         <section class="my-36">
             <div class="text-center">
-                <h3 class="text-5xl font-extrabold">Why Choose Us</h3>
+                <h3 class="text-xl lg:text-5xl font-extrabold">Why Choose Us</h3>
                 <p class="text-base font-medium w-2/3 mx-auto mt-6 mb-12 opacity-60">Contrary to popular belief, is not
                     simply
                     random
@@ -609,7 +621,7 @@
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-11">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-11">
                 <div class="space-y-6">
                     <div>
                         <!-- 1st card -->
@@ -724,7 +736,7 @@
             <img src="images/logo.png" alt="" srcset="">
             <h2 class="text-4xl ">Fruit Burst</h2>
         </div>
-        <div class="flex flex-nowrap lg:grid-flow-col gap-4 font-semibold">
+        <div class="flex flex-wrap justify-center gap-4 font-semibold">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About us</a>
             <a class="link link-hover">Shop</a>
