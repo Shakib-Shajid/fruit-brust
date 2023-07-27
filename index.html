@@ -53,7 +53,6 @@
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-
                     </ul>
                 </div>
                 <a class="btn btn-ghost sm:hidden flex items-center ml-auto">
@@ -69,7 +68,6 @@
                     <p class="text-4xl font-bold text-white">Fruit Burst</p>
                 </div>
             </a>
-
             <div class="navbar-end">
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -81,18 +79,19 @@
                     </label>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <div>
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                            <li> <input type="email" placeholder="search here" class="input rounded-3xl bg-white" />
-                                <i class="fa-solid fa-magnifying-glass absolute ml-auto"></i>
-                            </li>
-                        </div>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li><a>
+                        <li><input type="email" placeholder="search here" class="rounded-3xl bg-white" />
+                            <i class="fa-solid fa-magnifying-glass -ml-10"></i>
+                        </li></a></li>
                     </ul>
                 </div>
-
+                <input type="email" placeholder="search here"
+                    class="input input-ghost max-w-xs hidden sm:block rounded-3xl bg-white p-4" />
+                <i class="fa-solid fa-magnifying-glass hidden sm:block -ml-8"></i>
             </div>
         </div>
 
@@ -555,7 +554,7 @@
                 <div class="hero-content text-center text-neutral-content">
                     <div class="space-y-4">
                         <div class="mb-12">
-                            <h1 class="text-5xl font-extrabold text-white">Meet the team section</h1>
+                            <h1 class="text-2xl lg:text-5xl font-extrabold text-white">Meet the team section</h1>
                             <p class="w-2/3 mx-auto mt-6 text-white">Contrary to popular belief, is not simply random
                                 text. It has
                                 roots in a
@@ -613,7 +612,7 @@
         </section>
 
         <!-- why choose us -->
-        <section class="my-36">
+        <section class="my-10 lg:my-36">
             <div class="text-center">
                 <h3 class="text-xl lg:text-5xl font-extrabold">Why Choose Us</h3>
                 <p class="text-base font-medium w-2/3 mx-auto mt-6 mb-12 opacity-60">Contrary to popular belief, is not
@@ -734,7 +733,7 @@
 
     </main>
 
-    <footer class="footer lg:footer-center p-2 bg-black text-base-content text-white rounded lg:py-36">
+    <footer class="footer footer-center p-2 bg-black text-base-content text-white rounded lg:py-36">
         <div class="flex gap-4">
             <img src="images/logo.png" alt="" srcset="">
             <h2 class="text-4xl ">Fruit Burst</h2>
